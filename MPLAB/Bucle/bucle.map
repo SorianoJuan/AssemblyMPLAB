@@ -1,0 +1,38 @@
+MPLINK 4.45, Linker
+Linker Map File - Created Sat Mar 25 22:34:44 2017
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x00001a
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00000c      
+            13 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000000    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+                       L1   0x000006    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+                       L2   0x000004    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+                       L3   0x000002    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000000    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+                       L3   0x000002    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+                       L2   0x000004    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+                       L1   0x000006    program     static C:\Users\Juan\Desktop\MPLAB\Bucle\bucle.asm
+
+

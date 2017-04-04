@@ -1,0 +1,63 @@
+MPASM  5.47                         BUCLE.ASM   3-25-2017  22:34:43         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;List p = 16f877a
+                      00002 ;include <p16f877a.inc>
+                      00003    
+  00000020            00004 CONT1   EQU 0X20
+  00000021            00005 CONT2   EQU 0x21
+  00000022            00006 CONT3   EQU 0x22
+                      00007         
+0000                  00008 INICIO  org     0x00
+0000   301E           00009         MOVLW   .30             
+0001   00A2           00010         MOVWF   CONT3
+0002   30D7           00011 L3      MOVLW   .215
+0003   00A1           00012         MOVWF   CONT2
+0004   30FF           00013 L2      MOVLW   .255
+0005   00A0           00014         MOVWF   CONT1
+Message[305]: Using default destination of 1 (file).
+0006   0BA0           00015 L1      DECFSZ  CONT1
+0007   2806           00016         GOTO    L1
+Message[305]: Using default destination of 1 (file).
+0008   0BA1           00017         DECFSZ  CONT2
+0009   2804           00018         GOTO    L2
+Message[305]: Using default destination of 1 (file).
+000A   0BA2           00019         DECFSZ  CONT3
+000B   2802           00020         GOTO    L3
+000C   0063           00021         SLEEP
+                      00022         
+                      00023         END
+MPASM  5.47                         BUCLE.ASM   3-25-2017  22:34:43         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+CONT1                             00000020
+CONT2                             00000021
+CONT3                             00000022
+INICIO                            00000000
+L1                                00000006
+L2                                00000004
+L3                                00000002
+__16F877A                         00000001
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXX--- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    13
+Program Memory Words Free:  8179
+
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     3 reported,     0 suppressed
+
+
